@@ -941,6 +941,7 @@ a:active {
 .faq__inner .faq__items .faq__title {
   font-size: 22px;
   line-height: 24px;
+  padding: 0 30px 0 0;
   cursor: pointer;
   position: relative;
 }
@@ -985,8 +986,12 @@ a:active {
 }
 
 .faq__inner .faq__items .faq__descr {
-  padding: 20px 0 0 0;
+  padding: 10px;
   display: none;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #ebebeb7f;
+  border-radius: 10px;
 }
 
 .footer__inner {
@@ -1013,7 +1018,7 @@ a:active {
   padding: 0 0 19px;
 }
 
-.footer__inner .footer__top .footer__box .ico__list1 li {
+.footer__inner .footer__top .footer__box .ico__list1 .ico__list-a {
   font-size: 14px;
   line-height: 16px;
   margin: 8.5px 0;

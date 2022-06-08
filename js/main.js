@@ -15,16 +15,6 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 1500,
         variableWidth: true,
-
-        // responsive: [
-        //     {
-        //         breakpoint: 1106,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //         }
-        //     }
-        // ]
     });
 });
 $(document).ready(function () {
@@ -32,6 +22,17 @@ $(document).ready(function () {
         if ($('.faq__item').hasClass('one')) {
             $('.faq__title').not($(this)).removeClass('active');
             $('.faq__descr').not($(this).next()).slideUp(300);
+        }
+
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
+
+$(document).ready(function () {
+    $('.footer__box-title').click(function (event) {
+        if ($('.ico__list1').hasClass('one')) {
+            $('.footer__box-title').not($(this)).removeClass('active');
+            $('.ico__list-li').not($(this).next()).slideUp(300);
         }
 
         $(this).toggleClass('active').next().slideToggle(300);
